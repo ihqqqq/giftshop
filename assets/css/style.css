@@ -297,6 +297,7 @@ a {
   padding: 10px;
   background-color: #fff;
   border-radius: 10px;
+  position: relative;
 }
 .flashsale__product-thumb {
   width: 172px;
@@ -304,6 +305,23 @@ a {
   object-fit: cover;
   cursor: pointer;
   margin-bottom: 15px;
+}
+
+.flashsale__product-smart {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: #ffff;
+  height: 24px;
+  width: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #b53740;
 }
 
 .flashsale__product-name a {
@@ -421,7 +439,7 @@ a {
   padding: 20px;
   background: #fff3f3;
   border-radius: 20px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0, 0.05);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   float: right;
 }
 
