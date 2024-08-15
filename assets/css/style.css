@@ -472,8 +472,129 @@ a {
   text-align: center;
   overflow: auto;
 }
-.outstandin__item-title {
+.outstanding__item-title {
   font-size: 1.4rem;
   line-height: 20px;
   margin-top: 10px;
+}
+
+/* bestseller */
+.bestseller {
+  width: 910px;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #fff3f3;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  float: right;
+}
+
+.bestseller__heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  color: #865545;
+}
+
+.bestseller__heading::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px dashed #865545;
+  width: 200px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bestseller__wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 10px;
+  position: absolute;
+}
+
+.bestseller__item-img {
+  width: 100%;
+  height: 183px;
+  object-fit: cover;
+}
+
+.bestseller__item {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.bestseller__item-name {
+  color: #3c3b3b;
+  overflow: hidden;
+  width: 183px;
+  text-align: left;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.bestseller__item-pricebox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.bestseller__item-pricebox {
+  padding-bottom: 20px;
+}
+.bestseller__item-price {
+  color: #db5f5f;
+  font-weight: 700;
+
+}
+
+.bestseller__item-btn-cart {
+  background: initial;
+  box-shadow: 0 0 4px 0 #b53740;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  border: initial;
+  position: relative;
+  z-index: 99;
+}
+
+.bestseller__bottom {
+  text-align: center;
+
+}
+
+.bestseller-viewmore {
+  background: #b53740;
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.bestseller-viewmore a {
+  color: #fff;
 }
