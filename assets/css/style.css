@@ -124,9 +124,7 @@ a {
 
 .snowflake {
   width: 40px;
-
 }
-
 
 .flashsale__title a {
   color: #fff;
@@ -154,13 +152,6 @@ a {
   border-radius: 10px;
   position: relative;
 }
-.flashsale__product-thumb {
-  width: 172px;
-  height: 172px;
-  object-fit: cover;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
 
 .flashsale__product-smart {
   position: absolute;
@@ -178,7 +169,36 @@ a {
   font-weight: bold;
   background: var(--maincolor);
 }
+.flashsale__product-thumb {
+  width: 172px;
+  height: 172px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 15px;
+  position: relative;
+}
 
+.flashsale__product-thumb:hover + .flashsale__product-like,
+.flashsale__product-like:hover {
+  opacity: 1;
+}
+
+.flashsale__product-like {
+  position: absolute;
+  color: var(--maincolor);
+  top: 10px;
+  left: 150px;
+  width: 30px;
+  height: 30px;
+  background-color: #f6dee1;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s linear;
+}
 .flashsale__product-name a {
   font-size: 1.4rem;
   color: #3c3b3b;
@@ -386,11 +406,34 @@ a {
 }
 
 .bestseller__item {
+  position: relative;
   background: #fff;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.bestseller__item-link:hover .bestseller__item-like,
+.bestseller__item-like:hover {
+  opacity: 1;
+}
+
+.bestseller__item-like {
+  position: absolute;
+  color: var(--maincolor);
+  top: 10px;
+  left: 160px;
+  width: 30px;
+  height: 30px;
+  background-color: #f6dee1;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s linear;
 }
 
 .bestseller__item-name {
@@ -430,7 +473,13 @@ a {
   margin-bottom: 5px;
   border: initial;
   position: relative;
+  cursor: pointer;
   z-index: 99;
+  transition: 0.25s linear;
+}
+
+.bestseller__item-btn-cart:hover {
+  opacity: 0.7;
 }
 
 .bestseller__bottom {
@@ -646,6 +695,3 @@ a {
   font-weight: bold;
   margin-top: 10px;
 }
-
-/* footer */
-
