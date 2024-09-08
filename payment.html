@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <main class="main">
+        <header class="main-header">
+          <h1 class="shop-name">
+            <a href="">ND Gift</a>
+          </h1>
+        </header>
+
+        <article class="form-layout">
+          <div class="col col-two">
+            <section class="section">
+              <div class="section__header">
+                <h2>Thông tin nhận hàng</h2>
+                <div class="section__login">
+                  <i class="fa-solid fa-circle-user"></i>
+                  <a href="">Đăng nhập</a>
+                </div>
+              </div>
+              <div class="section__content">
+                <div class="form-wrap">
+                  <div class="form-control">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="field_input"
+                    />
+                  </div>
+
+                  <div class="form-control">
+                    <input
+                      type="text"
+                      placeholder="Họ và tên"
+                      class="field_input"
+                    />
+                  </div>
+                  <div class="form-control">
+                    <input
+                      type="text"
+                      placeholder="Số điện thoại (tùy chọn)"
+                      class="field_input"
+                    />
+                  </div>
+                  <div class="form-control">
+                    <input
+                      type="text"
+                      placeholder="Địa chỉ (tùy chọn)"
+                      class="field_input"
+                    />
+                  </div>
+
+                  <textarea
+                    name=""
+                    id=""
+                    class="field_input"
+                    rows="5"
+                    placeholder="Ghi chú (tùy chọn)"
+                  ></textarea>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col col-two">
+            <section class="section">
+              <div class="section">
+                <div class="section__header section-no-wrap">
+                  <h2>Vận chuyển</h2>
+                  <div class="alert">Vui lòng nhập thông tin giao hàng</div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+      </main>
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2 class="sidebar__title">Đơn hàng (4 sản phẩm)</h2>
+        </div>
+        <div class="sidebar__content">
+          <div class="field__input-wrapper">
+            <input class="field_input" placeholder="Nhập mã giảm giá" />
+            <button class="field_input-btn">Áp dụng</button>
+          </div>
+
+          <table class="order-table">
+            <thead>
+              
+            </thead>
+            <tbody class="total-line-table__tbody">
+              <tr class="total-line total-line--subtotal">
+                <th class="total-line-name">Tạm tính</th>
+                <td class="total-line-price">1.200.000₫</td>
+              </tr>
+              <tr class="total-line total-line-shipping--free">
+                <th class="total-line-name">Phí vận chuyển</th>
+                <td class="total-line-price">-</td>
+              </tr>
+            </tbody>
+
+            <tfoot class="total-line-table__footer">
+              <tr class="total-line">
+                <th class="total-line-name">
+                  <span>Tổng cộng</span>
+                </th>
+                <th class="total-line-price total-line-textleft">
+                  <span class="amount">1.200.000₫</span>
+                </th>
+                <th></th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

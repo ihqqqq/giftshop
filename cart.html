@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/css/detailproduct.css" />
+    <link rel="stylesheet" href="./assets/css/cart.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/gioithieu.css">
+    <link rel="stylesheet" href="./assets/css/gioithieu.css" />
 
     <title>Giới thiệu</title>
   </head>
@@ -365,40 +367,127 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
-        <h1 class="page-title"><a href="#">Giới thiệu</a></h1>
-        <p class="page-content">
-          ND Gift - Online shopping là kênh phân phối bán buôn, bán lẻ, chuyên
-          cung cấp các sản phẩm đồ chơi, quà tặng... <br />
-          <br />
+    <main class="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li class="home">
+              <a href="/index.html">Trang chủ</a>
+              <i class="fa-solid fa-greater-than"></i>
+            </li>
+            <li class="home">
+              <strong>
+                <span>Giỏ hàng</span>
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          ND Gift cung cấp những sản phẩm quà tặng đẹp được kiểm tra, trải
-          nghiệm kỹ lưỡng trước khi tung ra thị trường. <br />
-          <br />
-          Cam kết bảo hành một đổi 1 trong tuần đầu tiên, bảo hành theo tiêu
-          chuẩn của nhà sản xuất. Cam kết sản phẩm chất lượng, chính hãng với
-          giá tốt nhất thị trường. Nếu bạn đang tìm kiếm một trang web để mua và
-          bán hàng trực tuyến thì ND Gift là một sự lựa chọn tuyệt vời dành cho
-          bạn. ND Gift là trang thương mại điện tử cho phép người mua và người
-          bán tương tác và trao đổi dễ dàng thông tin về sản phẩm và chương
-          trình khuyến mãi của shop. Do đó, việc mua bán trên ND Gift trở nên
-          nhanh chóng và đơn giản hơn. Bạn có thể trò chuyện trực tiếp với nhà
-          bán hàng để hỏi trực tiếp về mặt hàng cần mua. Để bạn có thể dễ dàng
-          khi tìm hiểu và sử dụng sản phẩm, ND Gift Blog - trang blog thông tin
-          chính thức của ND Gift - sẽ giúp bạn có thể tìm được cho mình các kiến
-          thức về xu hướng thời trang, review công nghệ, mẹo làm đẹp, tin tức
-          tiêu dùng và deal giá tốt bất ngờ. <br />
-          <br />
+      <div class="cart-layout">
+        <div class="container">
+          <h1 class="product-detail__title">Giỏ hàng của bạn</h1>
 
-          Đến với ND Gift, cơ hội để trở thành một nhà bán hàng dễ dàng hơn bao
-          giờ hết. Chỉ với vài thao tác trên ứng dụng, bạn đã có thể đăng bán
-          ngay những sản phẩm của mình. Không những thế, các nhà bán hàng có thể
-          tự tạo chương trình khuyến mãi trên ND Gift để thu hút người mua với
-          những sản phẩm có mức giá hấp dẫn. Khi đăng nhập tại ND Gift Kênh
-          người bán, bạn có thể dễ dàng phân loại sản phẩm, theo dõi đơn hàng,
-          chăm sóc khách hàng và cập nhập ngay các hoạt động của shop.
-        </p>
+          <div class="cart-layout__main-content">
+            <div class="cart-layout__main-content-left">
+              <div class="cart-layout__header-info">
+                <div class="cart-layout__header-info--1">
+                  Thông tin sản phẩm
+                </div>
+                <div class="cart-layout__header-info--2">Đơn giá</div>
+                <div class="cart-layout__header-info--3">Số lượng</div>
+                <div class="cart-layout__header-info--4">Thành tiền</div>
+              </div>
+
+              <div class="cart-layout__item">
+                <a href="" class="cart-layout__link">
+                  <img src="./assets/images/product-1.png" alt="" />
+                </a>
+
+                <div class="cart-layout__item-info">
+                  <div class="cart-layout__item-info--name">
+                    <a href="#!"
+                      >Mô hình tượng Shin bút chì cosplay Phật Tổ Như Lai Ráp
+                      kiểu dáng dễ thương, tịnh tâm giải nghiệp đặt bàn học,quà
+                      tặng</a
+                    >
+                    <a href="" class="cart-layout__item-remove">Xóa</a>
+                  </div>
+                  <div class="cart-layout__item-info--price">300.000₫</div>
+                  <div class="cart-layout__item-info--form">
+                    <div class="product-detail__form">
+                      <div class="product-detail__form-group">
+                        <div class="product-detail__form-quantity">
+                          <div class="product-detail__form-quantity-control">
+                            <button class="product-detail__form-btn1">-</button>
+                            <input
+                              type="text"
+                              class="product-detail__form-mid"
+                              value="1"
+                            />
+                            <button class="product-detail__form-btn2">+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-layout__item-info--amount">600.000₫</div>
+                </div>
+              </div>
+
+              <div class="cart-layout__item">
+                <a href="" class="cart-layout__link">
+                  <img src="./assets/images/product-1.png" alt="" />
+                </a>
+
+                <div class="cart-layout__item-info">
+                  <div class="cart-layout__item-info--name">
+                    <a href="#!"
+                      >Mô hình tượng Shin bút chì cosplay Phật Tổ Như Lai Ráp
+                      kiểu dáng dễ thương, tịnh tâm giải nghiệp đặt bàn học,quà
+                      tặng</a
+                    >
+                    <a href="" class="cart-layout__item-remove">Xóa</a>
+                  </div>
+                  <div class="cart-layout__item-info--price">300.000₫</div>
+                  <div class="cart-layout__item-info--form">
+                    <div class="product-detail__form">
+                      <div class="product-detail__form-group">
+                        <div class="product-detail__form-quantity">
+                          <div class="product-detail__form-quantity-control">
+                            <button class="product-detail__form-btn1">-</button>
+                            <input
+                              type="text"
+                              class="product-detail__form-mid"
+                              value="1"
+                            />
+                            <button class="product-detail__form-btn2">+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-layout__item-info--amount">600.000₫</div>
+                </div>
+              </div>
+
+              <div class="cart-layout__bottom">
+                <div class="cart-layout__sub-total">
+                  <span>Tổng tiền:</span>
+                  <div class="cart_layout__subtotal--total">52.854.000.000₫</div>
+                </div>
+  
+                <div class="cart-layout--checkout">
+                  <button>Thanh toán</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-layout__main-content-right">
+              
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 

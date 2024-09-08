@@ -1,0 +1,179 @@
+:root {
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 2em 0 2em;
+  display: flex;
+}
+
+.main {
+  min-width: 800px;
+}
+.main-header {
+  margin-bottom: 21px;
+}
+.shop-name a {
+  color: #2a9dcc;
+  font-size: 2.8rem;
+  text-decoration: none;
+}
+
+.form-layout {
+  display: flex;
+}
+
+.col-two {
+  width: 50%;
+  padding: 0 14px;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+}
+.section__header h2 {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.section__login i,
+.section__login a {
+  color: #2a9dcc;
+  text-decoration: none;
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form-wrap:nth-child(1) {
+  margin-top: 20px;
+}
+.form-control .field_input {
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  height: 44px;
+  background-color: #fff;
+  color: #333;
+}
+
+.form-control input::placeholder {
+  padding-left: 10px;
+}
+
+.section__header {
+}
+.alert {
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #0c5460;
+  font-size: 1.4rem;
+  width: 100%;
+  margin: 20px 0 16px;
+  background-color: #d1ecf1;
+  text-align: center;
+}
+
+.sidebar__header {
+  color: #333;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.field__input-wrapper {
+  display: flex;
+  margin-top: 30px;
+  /* flex-direction: column; */
+}
+.field__input-wrapper .field_input {
+  /* border-top: 1px solid #ccc; */
+  border-radius: 4px;
+  width: 267px;
+  border: 1px solid #d9d9d9;
+  height: 52px;
+  background-color: #fff;
+  color: #333;
+}
+
+.field__input-wrapper .field_input::placeholder {
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+.field_input-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a9dcc;
+  color: #fff;
+  display: block;
+  margin-left: 10px;
+  display: flex;
+}
+
+.section-no-wrap {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  width: 100%;
+  margin-top: 50px;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+
+
+.total-line th, .total-line td {
+    padding-top: 3rem;
+}
+.total-line th {
+    font-size: 1.4rem;
+    color: #717171;
+}
+
+.total-line {
+    padding-left: 0;
+    text-align: left;
+}
+
+td:last-child, th:last-child {
+    text-align: right;
+}
+
+.total-line-price.total-line-textleft {
+    text-align: right;
+}
+
+.amount {
+    font-size: 2.1rem;
+    color: #2a9dcc;
+}
+
+
