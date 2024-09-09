@@ -141,13 +141,6 @@ table {
   margin-top: 50px;
 }
 
-thead {
-  display: table-header-group;
-  vertical-align: middle;
-  unicode-bidi: isolate;
-  border-color: inherit;
-}
-
 
 
 .total-line th, .total-line td {

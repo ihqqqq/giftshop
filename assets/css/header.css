@@ -62,6 +62,9 @@
   display: flex;
   align-items: center;
 }
+.header__middle-item--link {
+  color: var(--topbarcolortext);
+}
 .header__middle-item--icon {
   width: 60px;
   height: 60px;
@@ -85,10 +88,17 @@
 .header__middle-item--link:hover {
   opacity: 0.7;
 }
-.header__middle-iten--info-t1 {
-  line-height: 21px;
-}
 
+.header__middle-item--info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  /* align-items: center; */
+  justify-content: center;
+}
+.header__middle-item--info-t2 {
+  margin-top: 10px;
+}
 .header__wrap-menu {
   background: var(--maincolor);
   border-top: 1px dashed #f9f2ea;
