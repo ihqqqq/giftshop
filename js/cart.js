@@ -143,6 +143,7 @@ function displayCartItems() {
 
 function decreaseQuantity(productName) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  productName = productName.trim();
   const product = cart.find((item) => item.name === productName);
 
   if (product && product.quantity > 1) {
@@ -157,6 +158,7 @@ function decreaseQuantity(productName) {
 
 function increaseQuantity(productName) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  productName = productName.trim();
   const product = cart.find((item) => item.name === productName);
 
   if (product) {
@@ -171,6 +173,7 @@ function increaseQuantity(productName) {
 
 function removeItem(productName) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  productName = productName.trim();
   cart = cart.filter((item) => item.name !== productName);
 
   localStorage.setItem("cart", JSON.stringify(cart));

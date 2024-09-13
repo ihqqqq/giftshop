@@ -3,21 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./assets/css/detailproduct.css" />
-    <link rel="stylesheet" href="./assets/css/cart.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/gioithieu.css" />
-
-    <title>Thanh toán</title>
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <title>Đăng nhập</title>
   </head>
   <body>
     <header class="header">
@@ -77,6 +68,12 @@
                     ></path>
                   </svg>
                   <a href="#!" class="header__top-right--link">Tài khoản</a>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="./login.html">Đăng nhập</a></li>
+                      <li><a href="./register.html">Đăng ký</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -252,10 +249,10 @@
                   </svg>
                 </div>
                 <div class="header__middle-item--info">
-                  <div class="header__middle-item--link">
+                  <a href="cart.html" class="header__middle-item--link">
                     <p class="header__middle-item--info">Giỏ hàng của bạn</p>
                     <p class="header__middle-item--info-t2">(0) sản phẩm</p>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -368,54 +365,42 @@
     </header>
 
     <main class="main">
-      <section class="breadcrumbs">
-        <div class="container">
-          <ul class="breadcrumb">
-            <li class="home">
-              <a href="/index.html">Trang chủ</a>
-              <i class="fa-solid fa-greater-than"></i>
-            </li>
-            <li class="home">
-              <strong>
-                <span>Giỏ hàng</span>
-              </strong>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div class="container">
+        <div class="form-container">
+          <h2>Đăng nhập</h2>
+          <p>
+            Nếu bạn chưa có tài khoản,
+            <a href="register.html">đăng ký tại đây</a>
+          </p>
 
-      <div class="cart-layout">
-        <div class="container">
-          <h1 class="product-detail__title">Giỏ hàng của bạn</h1>
-
-          <div class="cart-layout__main-content">
-            <div class="cart-layout__main-content-left">
-              <div class="cart-layout__header-info">
-                <div class="cart-layout__header-info--1">
-                  Thông tin sản phẩm
-                </div>
-                <div class="cart-layout__header-info--2">Đơn giá</div>
-                <div class="cart-layout__header-info--3">Số lượng</div>
-                <div class="cart-layout__header-info--4">Thành tiền</div>
-              </div>
-
-              <div id="cart-items-container">
-                <!-- sản phẩm được thêm vào ở đây -->
-              </div>
-
-              <div class="cart-layout__bottom">
-                <div class="cart-layout__sub-total">
-                  <span>Tổng tiền:</span>
-                  <div class="cart_layout__subtotal--total">0₫</div>
-                </div>
-
-                <div class="cart-layout--checkout">
-                  <button onclick="window.location.href = 'process_order.php'">Thanh toán</button>
-                </div>
-              </div>
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
             </div>
+            <div class="form-group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Mật khẩu"
+                required
+              />
+            </div>
+            <button type="submit">Đăng nhập</button>
+          </form>
 
-            <div class="cart-layout__main-content-right"></div>
+          <p class="forget-password"><a href="#">Quên mật khẩu</a></p>
+
+          <p class="login-other">Hoặc đăng nhập bằng</p>
+          <div class="social-login">
+            <a href="#" class="facebook-btn">Facebook</a>
+            <a href="#" class="google-btn">Google</a>
           </div>
         </div>
       </div>
@@ -643,7 +628,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="./js/cart.js"></script>
   </body>
 </html>

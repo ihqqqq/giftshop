@@ -86,9 +86,6 @@ body {
   line-height: 1.5;
   display: block;
   color: #231f20;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .cart-layout__item-info--price {
